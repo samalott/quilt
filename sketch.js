@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(windowHeight*.75, windowHeight*.75, WEBGL);
+  createCanvas(windowWidth*.75, windowWidth*.75, WEBGL);
   background(0, 0, 0);
   frameRate(4);
   angleMode(DEGREES);
