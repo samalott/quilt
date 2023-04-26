@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#instructions {
+  position: relative;
+  text-align: center;
+  margin-top: 5vh;
+  font-size:  4vw;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+canvas {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* transform: scale(.75); */
+}
+
+#step-input{
+    /* margin-left: 500px; */
+
+}
+button {
+    position: relative;
+    display: block;
+    margin-left: 500px;
+    padding: 1vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 3vw;
+
+}
+
+button.draw {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+
+
+/* .p5Canvas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+} */
