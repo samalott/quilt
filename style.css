@@ -43,8 +43,83 @@ button.draw {
     margin: auto;
 }
 
+@keyframes pop-up {
+    from {visibility: hidden;}
+    to {visibility: visible;}
+}
 
+#home {
+    position: fixed;
+    visibility: hidden;
+    right: 10px;
+    bottom: 10px;
+    width: 250px;
+    animation-name: pop-up;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    z-index:30;
+}
 
+#home-top {
+    position: relative;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-size: large;
+    background-color: blue;
+    box-shadow: inset -2px 0px 2px rgba(0, 0, 0, .8), 
+    inset 3px 4px 3px rgba(255, 255, 255, 1);
+    z-index: 30;
+}
+
+#home-body {
+    position: relative;
+    height: 100px;
+    padding-top: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    background-color: lightgray;
+    color: black;
+    border-radius: 0%;
+    box-shadow: inset -2px -2px 2px rgba(0, 0, 0, .8), 
+    inset 2px 0px 2px rgba(255, 255, 255, .8);
+    z-index: 30;
+}
+
+#home_button {
+    position: absolute;
+    height: 42px;
+    width: 70px;
+    top: 52%;
+    left: 34%;
+    padding-top: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: inset -2px -2px 2px rgba(0, 0, 0, .8), 
+    inset 2px 2px 2px rgba(255, 255, 255, 1);
+}
+
+.home_outline {
+    position: absolute;
+    border-style: dotted;
+    border-color: black;
+    border-width: 2px;
+    background-color: transparent;
+    height: 28px;
+    width: 56px;
+    top: 58%;
+    left: 36%;
+}
 /* .p5Canvas {
   display: block;
   margin-left: auto;
